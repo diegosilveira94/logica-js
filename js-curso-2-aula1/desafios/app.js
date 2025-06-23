@@ -86,7 +86,80 @@
 
 //     ex011
 // Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
-function numeroAoQuadrado(numero) {
-    return numero * numero;
+// function numeroAoQuadrado(numero) {
+//     return numero * numero;
+// }
+// console.log(numeroAoQuadrado(5));
+//    ex012
+// Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que serão recebidos como parâmetro.
+// function calcularIMC(altura, peso) {
+//     let imc = peso / (altura * altura);
+//     if(imc < 18.5) {
+//         alert('Baixo peso');
+//     }
+//     else if(imc > 18.5 && imc < 25) {
+//         alert('Peso normal');
+//     }
+//     else if(imc > 25 && imc < 30) {
+//         alert('Sobrepeso');
+//     }
+//     else if(imc > 30 && imc < 35) {
+//         alert('Obesidade grau I');
+//     }
+//     else if(imc > 35 && imc < 40) {
+//         alert('Obesidade grau II');
+//     } else {
+//         alert('Obesidade grau III (mórbida');
+//     }
+// }
+
+// let altura = prompt('Digite sua altura em metros: ');
+// let peso = prompt('Digite seu peso em kg: ');
+// calcularIMC(altura, peso);
+//     ex013
+// Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+// function numeroFatorial(num) {
+//     if (num == 0 || num == 1) {
+//         return 1;
+//     }
+//     return num * numeroFatorial(num - 1);
+// }
+
+// let fatorial = parseInt(prompt('Digite um número para calcular seu fatorial: '));
+// alert(numeroFatorial(fatorial));
+//     ex014
+// Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
+// function converterDolar(real, cotacaoDolar=4.0) {
+//     return real / cotacaoDolar;
+// }
+// let reais = parseFloat(prompt('Digite um valor em reais para conversão em dólar: '));
+// alert(`R$${reais} considerando a cotação de U$4,00 é de U$${converterDolar(reais)}`); 
+//     ex015
+// Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+// function calculoAreaPerimetroRetangular(altura, largura) {
+//     let area = largura * altura;
+//     let perimetro = 2 * (largura + altura);
+//     alert(`A área é ${area} e o perímetro é ${perimetro}`);
+// }
+// let altura = parseFloat(prompt('Digite a altura: '));
+// let largura = parseFloat(prompt('Digite a largura: '));
+// calculoAreaPerimetroRetangular(altura, largura); 
+//     ex016
+// Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+// function calculoAreaPerimetroCircular(raio, pi=3.14) {
+//     let area = pi * raio * raio;
+//     let perimetro = 2 * pi * raio;
+//     alert(`A área é ${area.toFixed(2)} e o perímetro é ${perimetro.toFixed(2)}`);
+// }
+
+// let raio = parseFloat(prompt('Digite o raio da sala: '));
+// calculoAreaPerimetroCircular(raio);
+//     ex017
+// Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+function calcularTabuada(num) {
+    for(let i=1; i < 11; i++) {
+        alert(`${num} x ${i} = ${num * i}`);
+    }
 }
-console.log(numeroAoQuadrado(5));
+numero = parseInt(prompt('Digite um número para tabuada: '));
+calcularTabuada(numero);
