@@ -72,13 +72,3 @@ function reiniciar() {
     alterarStatusBotaoReiniciar();
     alterarStatusBotaoSortear();
 }
-
-// function numeroInicialMaiorQueNumeroLimite(de, ate) {
-//         if(de >= ate) {
-//         alert('O número inicial é maior que o número limite.');
-//         document.getElementById('quantidade').value = '';
-//         document.getElementById('de').value = '';
-//         document.getElementById('ate').value = '';
-//         sortear();
-//     }
-// }
