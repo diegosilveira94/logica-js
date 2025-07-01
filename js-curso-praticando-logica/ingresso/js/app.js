@@ -1,12 +1,12 @@
 function comprar() {
     // armazenar tipo e quantidade de ingressos
     let tipoIngresso = document.getElementById('tipo-ingresso').value;
-    console.log(tipoIngresso);
     let qtdeIngresso = parseInt(document.getElementById('qtd').value);
-    console.log(qtdeIngresso);
-    let qtdeSuperiorDisponivel = parseInt(document.getElementById('qtd-superior').textContent.trim());
-    let qtdeInferiorDisponivel = parseInt(document.getElementById('qtd-inferior').textContent.trim());
-    console.log(qtdeIngresso);
+    // validacao para numero negativos
+    if (qtdeIngresso < 0) {
+        alert('Digite um número positivo');
+        return;
+    }
     // alterar ingressos disponiveis
     if(tipoIngresso === 'pista') {
         comprarPista(qtdeIngresso);
